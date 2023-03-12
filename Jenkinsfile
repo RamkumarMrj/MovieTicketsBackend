@@ -28,7 +28,7 @@ pipeline {
 //         }
         stage('docker run') {
              steps {
-                 sh "docker run -p 5555:5555 --name my-movie-plan-backend --link mysql-my-movie-plan -d my-movie-plan-backend:1.0"
+                 sh "docker run -p 5555:5555 --name movie_tickets_backend --link mysql_movie_tickets -d movie_tickets_backend:1.0"
              }
         }
     }
