@@ -1,14 +1,14 @@
 version: '3'
 
 services:
-  mysql-my-movie-plan:
+  mysql_movie_tickets:
     image: mysql:latest
-    container_name: mysql-movie-tickets
+    container_name: mysql_movie_tickets
     environment:
       - MYSQL_ROOT_PASSWORD=admin@root
       - MYSQL_USER=mysql
       - MYSQL_PASSWORD=root
-      - MYSQL_DATABASE=movie_tickets
+      - MYSQL_DATABASE=my_movie_plan
   springboot-docker-container:
     image: springboot-my-movie-plan
     container_name: springboot-my-movie-plan
